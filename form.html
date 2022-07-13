@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head >
+  <style>
+    body{
+	  padding-top:3px;
+	  padding-bottom:3px;
+	  padding-left:3px;
+	  padding-right:3px;
+	  background-color:lightblue;
+	  
+	}
+  
+  
+  
+  </style>
+  <script>
+  function validate()
+{
+if( document.Form.Name.a == "" )
+{
+alert( "Please provide your name!" );
+document.Form.Name.focus() ;
+return false;
+}
+if( document.Form.EMail.value == "" )
+{
+alert( "Please provide your Email!" );
+document.Form.EMail.focus() ;
+return false;
+
+}
+
+if( document.myForm.Country.value == "-1" )
+{
+alert( "Please provide your country!" );
+return false;
+}
+return( true );
+}
+</script>
+  <title>contact us</title> 
+  application form:<input type="text" value="46464" readonly disabled>
+   </head>
+   <body>
+    <nav class ="navbar background h-nav-resp">
+        <ul class ="nav-list v-class">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href ="Service.html ">Services </a></li>
+            <li><a href ="form.html" style="padding-right: 5px;">sighnUp</a></li>
+                <button class="dropbtn">contact Us</button>
+                
+              </div></li>
+         
+        </ul>
+    <h1>PROVIDE YOUR DETAILS </h1>
+    <form autocomplete="off" action="op.html"method="get" name="form" onsubmit="return(validate());">
+	
+	<p>
+	Participant's Type:
+	    
+		   <select align="left" name="h">
+		      <option>student</option>
+			   <option>facultymember</option>
+			    <option>Professional</option>
+				 <option>employee</option>
+				  <option>other</option>
+		   </select>
+        </br>
+	
+	 Name </br><input type text="text"  placeholder="name" name="a "/>
+	 </br>
+	 FName </br><input type text="text"  placeholder="fathername" name="b "/>
+	 
+	 </br>
+	 Enter Email:</br><input type="email" name="c"/>
+	 </br>
+	 enter your password:</br><input type ="password" placeholder="password" minlength="8" name="d"/>
+	 </br>
+	 enter phone number:</br><input type="tel" pattern="+[6-9]{2}-[0-9]{10}" name="e">
+	 <br/>
+	 address:</br>
+	      <textarea row="4" cols="23" style="resize:none;" name="f">
+		  </textarea>
+		  </br>
+		  Select Gender:
+		     <input type="radio" name="gender" name="g ">male
+        	 <input type="radio" name="gender" name="g ">female
+			 <input type="radio" name="gender" name="g">other
+			 </br>
+			
+		   
+	       <input type="submit"/>
+		  
+		   <input type="reset" value="clear"/>
+		
+	</p>
+	
+	
+	</form>
+   
+   
+   
+   </body>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
